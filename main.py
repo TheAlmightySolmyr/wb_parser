@@ -1,6 +1,9 @@
+from wb_parser.cli import cli_main
+
+
 def main():
-    print("Hello from wb-parser!")
+    cli_main()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
