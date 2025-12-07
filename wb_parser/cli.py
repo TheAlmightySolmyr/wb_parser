@@ -1,5 +1,6 @@
 import argparse
 
+
 def cli_main():
     parser = argparse.ArgumentParser(description='WB parser')
     parser.add_argument('search', type=str, 
@@ -13,4 +14,4 @@ def cli_main():
     parser.add_argument('-country', type=str, 
                         help='Input Country of manufacture')
     args = parser.parse_args()
-    print (args)
+    print(args)
