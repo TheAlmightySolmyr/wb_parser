@@ -13,5 +13,15 @@ def cli_main():
                         help='Input max rating')
     parser.add_argument('-country', type=str, 
                         help='Input Country of manufacture')
+    parser.add_argument('-pages', type=int, default=3,
+                        help='Number of pages for parsing. Default value is 3')
     args = parser.parse_args()
-    print(args)
+    print(f'''
+    Search query: {args.search}
+
+    Filters: price {args.minp}-{args.maxp} rub., rating {args.minrate}-{args.maxrate}
+
+    Parsing {args.pages} pages''')
+    if args.country:
+        print(f'''
+    Country of manufacture: {args.country}''')
