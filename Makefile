@@ -6,3 +6,6 @@ check:
 
 fix:
 	uv run ruff check --fix
+
+run:
+	uv run main.py
