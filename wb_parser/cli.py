@@ -8,8 +8,8 @@ def cli_main():
     parser.add_argument('-minp', type=int, help='Input min price')
     parser.add_argument('-maxp', type=int, required=True, 
                         help='Input max price')
-    parser.add_argument('-minrate', type=float, help='Input min rating')
-    parser.add_argument('-maxrate', type=float, required=True, 
+    parser.add_argument('-minr', type=float, help='Input min rating')
+    parser.add_argument('-maxr', type=float, required=True, 
                         help='Input max rating')
     parser.add_argument('-country', type=str, 
                         help='Input Country of manufacture')
@@ -19,7 +19,7 @@ def cli_main():
     print(f'''
     Search query: {args.search}
 
-    Filters: price {args.minp}-{args.maxp} rub., rating {args.minrate}-{args.maxrate}
+    Filters: price {args.minp}-{args.maxp} rub., rating {args.minr}-{args.maxr}
 
     Parsing {args.pages} pages''')
     if args.country:
