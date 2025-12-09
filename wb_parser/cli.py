@@ -9,8 +9,7 @@ def cli_main():
     parser.add_argument('-maxp', type=int, required=True, 
                         help='Input max price')
     parser.add_argument('-minr', type=float, help='Input min rating')
-    parser.add_argument('-maxr', type=float, required=True, 
-                        help='Input max rating')
+    parser.add_argument('-maxr', type=float, help='Input max rating')
     parser.add_argument('-country', type=str, 
                         help='Input Country of manufacture')
     parser.add_argument('-pages', type=int, default=3,
